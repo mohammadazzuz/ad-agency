@@ -1,0 +1,289 @@
+body {
+      background: linear-gradient(to bottom, #0f1c33, #09111e);
+      color: white;
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(8px);
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: gold;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+    }
+
+    header img {
+      width: 180px;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      color: gold;
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #ccc;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 3rem 1rem;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      padding: 1.5rem;
+      border-radius: 12px;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: transform 0.4s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.03);
+    }
+
+    .card h3 {
+      color: gold;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: #ddd;
+      font-size: 0.95rem;
+    }
+
+    .map-section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    iframe {
+      width: 90%;
+      max-width: 700px;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #000;
+      color: #ccc;
+      text-align: center;
+      padding: 1.5rem;
+      padding-bottom: 7rem;
+      margin-top: 2rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .services {
+        flex-direction: column;
+      }
+    }
+
+/* أساسيات التصميم المتجاوب */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cairo', sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav .logo {
+  font-weight: bold;
+  color: gold;
+  font-size: 1.3rem;
+}
+
+nav .menu {
+  display: flex;
+  gap: 1rem;
+}
+
+nav .menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav .hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* قائمة الجوال */
+@media (max-width: 768px) {
+  nav .menu {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  nav .menu.active {
+    display: flex;
+  }
+
+  nav .hamburger {
+    display: block;
+    color: white;
+  }
+
+  .mobile-actions {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #111;
+    padding: 0.6rem;
+    z-index: 999;
+    border-top: 1px solid #333;
+  }
+
+  .mobile-actions a {
+    background: red;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+}
+
+/* زر واتساب عائم */
+.whatsapp-float {
+  position: fixed;
+  bottom: 70px;
+  right: 15px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  text-decoration: none;
+  z-index: 999;
+}
+/* تحسين توسيط البطاقات */
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.card {
+  width: 90%;
+  max-width: 400px;
+  margin-bottom: 1rem;
+}
+
+/* زر الاتصال والتواصل - يظهر فقط في الموبايل */
+.mobile-buttons {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-buttons {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 999;
+  }
+
+  .mobile-buttons a {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .services {
+    padding-top: 2rem;
+  }
+
+  .about-text {
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  /* إخفاء الزر الأخضر */
+  
+
+}
+@media (min-width: 768px) {
+  .whatsapp-fixed {
+    display: flex;
+  }
+}

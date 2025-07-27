@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تواصل معنا</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+      <div class="logo"><a href="index.html">وكالة عزام</a></div>
+      <div class="hamburger" onclick="document.querySelector('.menu').classList.toggle('active')">☰</div>
+      <div class="menu">
+        <a href="index.html">الرئيسية</a>
+        <a href="about.html">من نحن</a>
+        <a href="gallery.html">معرض الأعمال</a>
+        <a href="contact.html">تواصل معنا</a>
+      </div>
+    </nav>
+
+
+  <header style="text-align: center; padding: 3rem 1rem;">
+    <h1 style="color: gold;">تواصل معنا</h1>
+    <p style="color: #ccc;">نحن في خدمتك لأي استفسار أو تعاون محتمل.</p>
+  </header>
+
+  <section style="display: flex; flex-direction: column; align-items: center; padding: 2rem;">
+    <form style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 12px; max-width: 500px; width: 100%;">
+      <div style="margin-bottom: 1rem;">
+        <label for="name">الاسم</label><br>
+        <input type="text" id="name" name="name" placeholder="اسمك الكامل" required style="width: 100%; padding: 0.5rem; border-radius: 5px; background: rgba(255,255,255,0.1); border: none; color: white;">
+      </div>
+      <div style="margin-bottom: 1rem;">
+        <label for="email">البريد الإلكتروني</label><br>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required style="width: 100%; padding: 0.5rem; border-radius: 5px; background: rgba(255,255,255,0.1); border: none; color: white;">
+      </div>
+      <div style="margin-bottom: 1rem;">
+        <label for="message">الرسالة</label><br>
+        <textarea id="message" name="message" rows="5" placeholder="اكتب رسالتك هنا..." required style="width: 100%; padding: 0.5rem; border-radius: 5px; background: rgba(255,255,255,0.1); border: none; color: white;"></textarea>
+      </div>
+      <button type="submit" style="padding: 0.6rem 2rem; background: gold; color: black; border: none; border-radius: 5px;">إرسال</button>
+    </form>
+
+    <a href="https://wa.me/201234567890" target="_blank" style="margin-top: 2rem; display: inline-block; background: #25D366; color: white; padding: 0.8rem 2rem; border-radius: 6px; text-decoration: none; font-weight: bold;">
+      تواصل عبر واتساب
+    </a>
+  </section>
+
+  <footer style="text-align: center; padding: 2rem; background: #000; color: #ccc;">
+    &copy; 2025 وكالة عزام للدعاية والإعلان
+  </footer>
+</body>
+</html>
