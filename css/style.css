@@ -151,7 +151,7 @@ nav .logo {
 
 nav .menu {
   display: flex;
-  gap: 1rem;
+  
 }
 
 nav .menu a {
@@ -167,7 +167,7 @@ nav .hamburger {
 }
 
 /* قائمة الجوال */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   nav .menu {
     display: none;
     flex-direction: column;
@@ -175,8 +175,7 @@ nav .hamburger {
     position: absolute;
     top: 60px;
     right: 0;
-    lift: 0;
-    width: 80vw;    
+    lift: 0;   
     padding: 1rem;
   }
 
