@@ -175,7 +175,8 @@ nav .hamburger {
     position: absolute;
     top: 60px;
     right: 0;
-    width: 1000px;    
+    lift: 0;
+    width: 80vw;    
     padding: 1rem;
   }
 
