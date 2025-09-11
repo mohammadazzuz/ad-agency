@@ -46,11 +46,8 @@ body {
     }
 
     h1 {
-      background: #1C242D;
-      background: linear-gradient(to top left, #1C242D 0%, #32363C 0%, #6DA6A8 40%, #EDEDED 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-     font-style: italic;
+      color: #108d8f;
+      font-style: italic;
       font-size: 2.5rem;
       margin: 0.5rem 0;
     }
@@ -86,10 +83,7 @@ body {
     }
 
     .card h3 {
-      background: #1C242D;
-      background: linear-gradient(to top left, #1C242D 0%, #32363C 0%, #6DA6A8 40%, #EDEDED 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: #108d8f;
       margin-bottom: 0.5rem;
     }
 
